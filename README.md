@@ -31,7 +31,7 @@ A11. Updating any value in the range would recalculate A11.
 7. Add support for formatting, for example bold, italics and underline
 ## Time Breakdown on the project
 - Steps 1-4 Took about 2.75 hours to complete
-- Steps 7 took 30 mins to get it working completely
+- Step 7 took 30 mins to get it working completely
 - Last half an hour used for testing, cleaning up bugs and writing the README.md
 
 ## What I learnt
@@ -44,21 +44,21 @@ Initially I did some research to find out solutions that were similar to what I 
 ## Design logic for questions not implemeneted
 
 ### Question 5
-- Modify the listerner to check if the content in a editable cell has a string starts with '='
-- Use string manipulation to split the string into multiple parts based on special characters ['=','A1','+','A2']
-- The second and fourth part of the error should be a mix of integers and charaters while the other two should be special characters with an additional check that the first position is an equal to and the third is an allowed operation. This should raise an warning/ alert if it doesn't match.
-- There is a function that converts an integer into the row format, this could be reversed to return an integer given some letters. Therefore the Characters would be used to retrieve the row and the integer to return the column
-- Then use this to calculate the operation given in the third position.
-- Output the result in the adjacent cell
+1. Modify the listerner to check if the content in a editable cell has a string starts with '='
+2. Use string manipulation to split the string into multiple parts based on special characters ['=','A1','+','A2']
+3. The second and fourth part of the error should be a mix of integers and charaters while the other two should be special characters with an additional check that the first position is an equal to and the third is an allowed operation. This should raise an warning/ alert if it doesn't match.
+4. There is a function that converts an integer into the row format, this could be reversed to return an integer given some letters. Therefore the Characters would be used to retrieve the row and the integer to return the column
+5. Then use this to calculate the operation given in the third position.
+6. Output the result in the adjacent cell
 
 ## Question 6 
-Modify the listerner to check if the content in a editable cell has a string starts with an allowed operation i.e. 'sum'/'diff'
-- Use string manipulation to split the string into multiple parts based on special characters ['sum','(','A1',':','A10',')']
-- Validate that the 3rd and 5th positions are column names, the 2nd and 6th are () and the 4th position is a colon. If not raise an alert/ warning.
-- There is a function that converts an integer into the row format, this could be reversed to return an integer given some letters. Therefore the Characters would be used to retrieve the row and the integer to return the column.
-- Iterate over the given range and store each value in an array
-- Using the operation in the first position (sum) perform the operation over the given array
-- Output the result in the adjacent cell
+1. Modify the listerner to check if the content in a editable cell has a string starts with an allowed operation i.e. 'sum'/'diff'
+2. Use string manipulation to split the string into multiple parts based on special characters ['sum','(','A1',':','A10',')']
+3. Validate that the 3rd and 5th positions are column names, the 2nd and 6th are () and the 4th position is a colon. If not raise an alert/ warning.
+4. There is a function that converts an integer into the row format, this could be reversed to return an integer given some letters. Therefore the Characters would be used to retrieve the row and the integer to return the column.
+5. Iterate over the given range and store each value in an array
+6. Using the operation in the first position (sum) perform the operation over the given array
+7. Output the result in the adjacent cell
 
 ## Inherent code issues
 - Formatting of cells
