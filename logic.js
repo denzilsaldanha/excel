@@ -28,7 +28,7 @@ function tableCreate() {
     }
   }
   body.appendChild(tbl);
-  var reloading = sessionStorage.getItem("data");
+  var reloading = JSON.parse(localStorage.getItem("data"));
   if (reloading != null) {
     var tables = document.getElementsByClassName("editabletable");
     var i;
@@ -139,15 +139,15 @@ function saveData(table) {
 
   // Put the object into storage
   localStorage.setItem("data", JSON.stringify(data));
+  window.location.reload();
 }
 
 function retrieveData(table) {
   var data = JSON.parse(localStorage.getItem("data"));
-  for (let i = 1; i < 101; i++) {
+  for (let i = 0; i < 100; i++) {
     row = data[i];
-
-    for (let j = 1; j < 101; j++) {
-      cell = getCellElement(table, i, j);
+    for (let j = 0; j < 100; j++) {
+      cell = getCellElement(table, i + 1, j + 1);
       cell.innerHTML = row[j];
     }
   }
