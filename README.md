@@ -32,7 +32,7 @@ A11. Updating any value in the range would recalculate A11.
 ## Time Breakdown on the project
 - Steps 1-4 Took about 2.75 hours to complete
 - Step 7 took 30 mins to get it working completely
-- Last half an hour used for testing, cleaning up bugs and writing the README.md
+- Last 45m used for testing, cleaning up bugs and writing the README.md
 
 ## What I learnt
 Frontend development is not my forte. I had to learn a little bit about listereners, css to solve some of the problems. That said, I used my strengths in algorithms and general programming logic to solve the given task. It was a fun exercise to actually try something different and solve a new problem. 
